@@ -2559,13 +2559,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   content: ""; }
 
 /* Dark theme */
-/* Light: #573454 Dark: #3b2639 -moz-linear-gradient(top, #fca99b 0%, #6e2842 100%) */
-/* l: #d8d7db */
-/* Light theme
-$mainColor: #fff;
-$fontColor: #9299a3;
-$fontColorActive: #4f8ef7;
-*/
+/* Light theme */
 /* darken($mainColor, 4%) - #383838 */
 /* #515151 */
 @font-face {
@@ -2657,13 +2651,13 @@ $fontColorActive: #4f8ef7;
 .gjs-clm-select option,
 .gjs-sm-select option,
 .gjs-sm-unit option, .gjs-pn-panel, .gjs-nv-item .gjs-nv-title-c, .gjs-sm-sector .gjs-sm-colorp-c, .gjs-clm-tags .gjs-sm-colorp-c, .gjs-block, .gjs-mdl-dialog, #gjs-rte-toolbar, .sp-container {
-  background-color: #444; }
+  background-color: #fff; }
 
 .gjs-color-main, .gjs-off-prv, .gjs-btn-prim, .gjs-pn-panel, .gjs-pn-btn, .gjs-btnt, .gjs-sm-sector .gjs-sm-field.gjs-sm-composite, .gjs-clm-tags .gjs-sm-field.gjs-sm-composite, .gjs-sm-sector .gjs-sm-composite.gjs-clm-field, .gjs-clm-tags .gjs-sm-composite.gjs-clm-field, .gjs-sm-sector .gjs-sm-stack #gjs-sm-add, .gjs-clm-tags .gjs-sm-stack #gjs-sm-add, .gjs-mdl-dialog, #gjs-rte-toolbar .gjs-rte-btn {
-  color: #ddd; }
+  color: #9299a3; }
 
 .gjs-color-active, .gjs-pn-btn.gjs-pn-active, .gjs-btnt.gjs-pn-active {
-  color: #f8f8f8; }
+  color: #1976d2; }
 
 .gjs-bdrag {
   pointer-events: none !important;
@@ -2720,7 +2714,7 @@ $fontColorActive: #4f8ef7;
 
 .gjs-editor {
   font-family: Helvetica, sans-serif;
-  background-color: #444;
+  background-color: #fff;
   position: relative;
   box-sizing: border-box;
   height: 100%; }
@@ -2748,7 +2742,7 @@ $fontColorActive: #4f8ef7;
   border-radius: 2px;
   box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.1);
   box-sizing: border-box;
-  color: #ddd;
+  color: #9299a3;
   padding: 0.5em 1em; }
 
 div.gjs-select {
@@ -2987,7 +2981,7 @@ div.gjs-select {
 #views.panel {
   width: 16.5%;
   font-weight: lighter;
-  color: #ddd;
+  color: #9299a3;
   right: 0;
   top: 0;
   z-index: 3;
@@ -3155,7 +3149,7 @@ ol.example li.placeholder:before {
     right: 2px;
     position: absolute; }
   .gjs-pn-btn > .gjs-pn-buttons, .gjs-btnt > .gjs-pn-buttons {
-    background-color: #444;
+    background-color: #fff;
     border-radius: 2px;
     position: absolute;
     display: none;
@@ -3166,7 +3160,7 @@ ol.example li.placeholder:before {
       display: block; }
     .gjs-pn-btn > .gjs-pn-buttons > .gjs-pn-arrow-l, .gjs-btnt > .gjs-pn-buttons > .gjs-pn-arrow-l {
       border-bottom: 5px solid transparent;
-      border-right: 5px solid #444;
+      border-right: 5px solid #fff;
       border-top: 5px solid transparent;
       left: -5px;
       top: 15px;
@@ -3385,7 +3379,7 @@ ol.example li.placeholder:before {
   width: 100%; }
 
 .gjs-field-color-picker {
-  background-color: #ddd;
+  background-color: #9299a3;
   cursor: pointer;
   height: 100%;
   width: 100%;
@@ -3483,7 +3477,7 @@ ol.example li.placeholder:before {
     width: 10px;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 100%;
-    background-color: #ddd;
+    background-color: #9299a3;
     cursor: pointer; }
   .gjs-field-range input::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -3492,14 +3486,14 @@ ol.example li.placeholder:before {
     width: 10px;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 100%;
-    background-color: #ddd;
+    background-color: #9299a3;
     cursor: pointer; }
   .gjs-field-range input::-ms-thumb {
     height: 10px;
     width: 10px;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 100%;
-    background-color: #ddd;
+    background-color: #9299a3;
     cursor: pointer; }
   .gjs-field-range input::-moz-range-track {
     background-color: rgba(0, 0, 0, 0.3);
@@ -3532,7 +3526,7 @@ ol.example li.placeholder:before {
 .gjs-add-trasp {
   background: none;
   border: none;
-  color: #ddd;
+  color: #9299a3;
   cursor: pointer;
   font-size: 1em;
   border-radius: 2px;
@@ -3733,7 +3727,7 @@ ol.example li.placeholder:before {
       height: auto;
       width: 100%;
       cursor: pointer;
-      color: #ddd;
+      color: #9299a3;
       box-sizing: border-box;
       text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
       border: none;
@@ -3836,7 +3830,7 @@ ol.example li.placeholder:before {
       width: 100%;
       border-radius: 1px; }
   .gjs-sm-sector .gjs-sm-color-picker, .gjs-clm-tags .gjs-sm-color-picker {
-    background-color: #ddd;
+    background-color: #9299a3;
     cursor: pointer;
     height: 16px;
     width: 100%;
@@ -3940,7 +3934,7 @@ ol.example li.placeholder:before {
     border: 1px solid rgba(0, 0, 0, 0.15);
     cursor: pointer; }
   .gjs-clm-tags #gjs-clm-new {
-    color: #ddd;
+    color: #9299a3;
     padding: 5px 6px;
     display: none; }
   .gjs-clm-tags .gjs-clm-tag {
@@ -4063,7 +4057,7 @@ ol.example li.placeholder:before {
     position: relative;
     height: 70px;
     width: 30%;
-    background-color: #444;
+    background-color: #fff;
     border-radius: 2px;
     float: left;
     overflow: hidden; }
@@ -4250,7 +4244,7 @@ ol.example li.placeholder:before {
 .sp-container button, .sp-container button:hover, .sp-container button:active {
   background: rgba(0, 0, 0, 0.3);
   border-color: rgba(0, 0, 0, 0.3);
-  color: #ddd;
+  color: #9299a3;
   text-shadow: none;
   box-shadow: none;
   padding: 3px 5px; }
