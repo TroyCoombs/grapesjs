@@ -103,13 +103,15 @@ require(['config/require-config'], function () {
       }
 
       if (event.data.event == 'sendTemplate') {
-        editor.setComponents(event.data.data);
+        editor.setComponents(event.data.data.template);
+        editor.setStyle(event.data.data.style);
       }
       if (event.data.event == 'returnTemplate') {
-        console.log(editor.getHtml());
+        console.log('css');
+        console.log(editor.getCss());
         var obj = {
           event: 'applyTemplateChanges',
-          data: editor.getHtml()
+          data: {template:editor.getHtml(), css: editor.getCss()}
         };
         parent.postMessage(obj, "http://localhost:4200");
       }
