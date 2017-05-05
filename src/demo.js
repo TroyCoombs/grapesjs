@@ -104,7 +104,7 @@ require(['config/require-config'], function () {
 
       if (event.data.event == 'sendTemplate') {
         editor.setComponents(event.data.data.template);
-        editor.setStyle(event.data.data.style);
+        editor.setStyle(event.data.data.css);
       }
       if (event.data.event == 'returnTemplate') {
         console.log('css');
