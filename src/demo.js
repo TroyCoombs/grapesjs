@@ -94,8 +94,7 @@ require(['config/require-config'], function () {
     }]);
 
     function receiveMessage(event) {
-      console.log('recieved event in grapes');
-      console.log(event);
+
       // Do we trust the sender of this message?  (might be
       // different from what we originally opened, for example).
       if (event.origin !== "http://localhost:4200") {
@@ -107,8 +106,6 @@ require(['config/require-config'], function () {
         editor.setStyle(event.data.data.css);
       }
       if (event.data.event == 'returnTemplate') {
-        console.log('css');
-        console.log(editor.getCss());
         var obj = {
           event: 'applyTemplateChanges',
           data: {template:editor.getHtml(), css: editor.getCss()}
@@ -125,7 +122,6 @@ require(['config/require-config'], function () {
     };
     parent.postMessage(obj, "http://localhost:4200");
 
-    editor.setComponents('<div><p>O snap it worked!</p></div>');
     editor.render();
   });
 });
