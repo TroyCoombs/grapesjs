@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" class="test">
+
+<head>
+    <meta charset="utf-8">
+    <title>GrapesJS</title>
+    <link rel="stylesheet" href="css/grapes.min.css">
+    <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="grapes.min.js"></script>
+</head>
+<style>
+    .test {
+        height: 100%;
+        margin: 0;
+    }
+</style>
+
+<body class="test">
+    <div id="gjs"></div>
+
+    <script type="text/javascript">
+        var editor = grapesjs.init({
+            container: '#gjs',
+            components: '<div></div>',
+            style: '',
+        });
+    </script>
+</body>
+
+</html>
