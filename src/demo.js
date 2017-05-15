@@ -64,34 +64,37 @@ require(['config/require-config'], function () {
     window.editor = editor;
 
     var pnm = editor.Panels;
-    pnm.addButton('options', [{
-      id: 'undo',
-      className: 'fa fa-undo icon-undo',
-      command: function (editor, sender) {
-        sender.set('active', 0);
-        editor.UndoManager.undo(1);
-      },
-      attributes: { title: 'Undo (CTRL/CMD + Z)' }
-    }, {
-      id: 'redo',
-      className: 'fa fa-repeat icon-redo',
-      command: function (editor, sender) {
-        sender.set('active', 0);
-        editor.UndoManager.redo(1);
-      },
-      attributes: { title: 'Redo (CTRL/CMD + SHIFT + Z)' }
-    }, {
-      id: 'clean-all',
-      className: 'fa fa-trash icon-blank',
-      command: function (editor, sender) {
-        if (sender) sender.set('active', false);
-        if (confirm('Are you sure to clean the canvas?')) {
-          var comps = editor.DomComponents.clear();
-          localStorage.clear();
-        }
-      },
-      attributes: { title: 'Empty canvas' }
-    }]);
+    pnm.addButton('options', [
+      // {
+      //   id: 'undo',
+      //   className: 'fa fa-undo icon-undo',
+      //   command: function (editor, sender) {
+      //     sender.set('active', 0);
+      //     editor.UndoManager.undo(1);
+      //   },
+      //   attributes: { title: 'Undo (CTRL/CMD + Z)' }
+      // },
+      // {
+      //   id: 'redo',
+      //   className: 'fa fa-repeat icon-redo',
+      //   command: function (editor, sender) {
+      //     sender.set('active', 0);
+      //     editor.UndoManager.redo(1);
+      //   },
+      //   attributes: { title: 'Redo (CTRL/CMD + SHIFT + Z)' }
+      // },
+      {
+        id: 'clean-all',
+        className: 'fa fa-trash icon-blank',
+        command: function (editor, sender) {
+          if (sender) sender.set('active', false);
+          if (confirm('Are you sure to clean the canvas?')) {
+            var comps = editor.DomComponents.clear();
+            localStorage.clear();
+          }
+        },
+        attributes: { title: 'Empty canvas' }
+      }]);
 
     function receiveMessage(event) {
 
@@ -108,7 +111,7 @@ require(['config/require-config'], function () {
       if (event.data.event == 'returnTemplate') {
         var obj = {
           event: 'applyTemplateChanges',
-          data: {template:editor.getHtml(), css: editor.getCss()}
+          data: { template: editor.getHtml(), css: editor.getCss() }
         };
         parent.postMessage(obj, "http://localhost:4200");
       }
