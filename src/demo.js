@@ -1,15 +1,17 @@
 require(['config/require-config'], function () {
-
   require(['grapesjs/main'], function (grapesjs) {
-
     var editor = grapesjs.init(
-
-
       {
         allowScripts: 1,
         showOffsets: 1,
         autorender: 0,
         noticeOnUnload: 0,
+        plugins: ['gjs-plugin-ckeditor'],
+        pluginOpts: {
+          'gjs-plugin-ckeditor': {
+
+          }
+        },
         container: '#gjs',
         height: '100%',
         fromElement: true,
@@ -20,9 +22,6 @@ require(['config/require-config'], function () {
           storeComponents: 1,
           storeStyles: 1,
         },
-
-
-
         commands: {
           defaults: [{
             id: 'open-github',
