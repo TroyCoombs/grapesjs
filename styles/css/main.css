@@ -3336,7 +3336,9 @@ ol.example li.placeholder:before {
     height: 20px;
     padding-right: 12px; }
   .gjs-field option {
-    padding: 3px 0; }
+    padding: 3px 0;
+    color: rgba(0, 0, 0, 0.74) !important;
+  }
   .gjs-field .gjs-sel-arrow {
     height: 100%;
     width: 9px;

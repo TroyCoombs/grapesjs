@@ -4,11 +4,11 @@ require.config({
 			exports: '_'
 		},
 		backbone: {
-			deps: [ 'underscore', 'jquery' ],
+			deps: ['underscore', 'jquery'],
 			exports: 'Backbone'
 		},
 		rte: {
-			deps: [ 'jquery' ],
+			deps: ['jquery'],
 			exports: 'rte'
 		},
 		backboneUndo: {
@@ -18,42 +18,47 @@ require.config({
 		keymaster: {
 			exports: 'keymaster'
 		},
+		'grapesjs-plugin-ckeditor': {
+			exports: 'grapesjs-plugin-ckeditor'
+		},
 	},
 
 	paths: {
-		jquery: 			'../node_modules/jquery/dist/jquery',
-		underscore: 	'../node_modules/underscore/underscore',
-		backbone: 		'../node_modules/backbone/backbone',
+		jquery: '../node_modules/jquery/dist/jquery',
+		underscore: '../node_modules/underscore/underscore',
+		backbone: '../node_modules/backbone/backbone',
 		backboneUndo: '../node_modules/backbone-undo/Backbone.Undo',
-		keymaster:		'../node_modules/keymaster/keymaster',
-		text: 				'../node_modules/requirejs-text/text',
-		Spectrum: 		'../node_modules/spectrum-colorpicker/spectrum',
-		codemirror: 	'../node_modules/codemirror',
-		formatting: 	'../node_modules/codemirror-formatting/formatting',
+		keymaster: '../node_modules/keymaster/keymaster',
+		text: '../node_modules/requirejs-text/text',
+		Spectrum: '../node_modules/spectrum-colorpicker/spectrum',
+		codemirror: '../node_modules/codemirror',
+		formatting: '../node_modules/codemirror-formatting/formatting',
+		ckeditor: '../node_modules/ckeditor/ckeditor.js',
+		'grapesjs-plugin-ckeditor': '../node_modules/grapesjs-plugin-ckeditor/grapesjs-plugin-ckeditor/grapesjs-plugin-ckeditor.min.js',
 	},
 
-	packages : 	[
-								{  name: 'GrapesJS', 				location: 'grapesjs'					},
-								{  name: 'Abstract', 				location: 'domain_abstract'		},
-								{  name: 'Editor', 					location: 'editor', 					},
-		            {  name: 'AssetManager', 		location: 'asset_manager', 		},
-		            {  name: 'BlockManager', 		location: 'block_manager', 		},
-								{  name: 'TraitManager', 		location: 'trait_manager', 		},
-		            {  name: 'StyleManager', 		location: 'style_manager', 		},
-		            {  name: 'DeviceManager', 	location: 'device_manager', 	},
-		            {  name: 'StorageManager', 	location: 'storage_manager', 	},
-		            {  name: 'PluginManager',		location: 'plugin_manager',		},
-		            {  name: 'Navigator', 			location: 'navigator', 				},
-		            {  name: 'DomComponents', 	location: 'dom_components', 	},
-		            {  name: 'RichTextEditor', 	location: 'rich_text_editor', },
-		            {  name: 'SelectorManager', location: 'selector_manager', },
-		            {  name: 'ModalDialog', 		location: 'modal_dialog', 		},
-		            {  name: 'CodeManager', 		location: 'code_manager', 		},
-		            {  name: 'CssComposer',			location: 'css_composer',			},
-		            {  name: 'Commands',				location: 'commands',					},
-		            {  name: 'Canvas',					location: 'canvas',						},
-		            {  name: 'Panels',					location: 'panels',						},
-		            {  name: 'Parser',					location: 'parser',						},
-		            {  name: 'Utils', 					location: 'utils', 						}
+	packages: [
+		{ name: 'GrapesJS', location: 'grapesjs' },
+		{ name: 'Abstract', location: 'domain_abstract' },
+		{ name: 'Editor', location: 'editor', },
+		{ name: 'AssetManager', location: 'asset_manager', },
+		{ name: 'BlockManager', location: 'block_manager', },
+		{ name: 'TraitManager', location: 'trait_manager', },
+		{ name: 'StyleManager', location: 'style_manager', },
+		{ name: 'DeviceManager', location: 'device_manager', },
+		{ name: 'StorageManager', location: 'storage_manager', },
+		{ name: 'PluginManager', location: 'plugin_manager', },
+		{ name: 'Navigator', location: 'navigator', },
+		{ name: 'DomComponents', location: 'dom_components', },
+		{ name: 'RichTextEditor', location: 'rich_text_editor', },
+		{ name: 'SelectorManager', location: 'selector_manager', },
+		{ name: 'ModalDialog', location: 'modal_dialog', },
+		{ name: 'CodeManager', location: 'code_manager', },
+		{ name: 'CssComposer', location: 'css_composer', },
+		{ name: 'Commands', location: 'commands', },
+		{ name: 'Canvas', location: 'canvas', },
+		{ name: 'Panels', location: 'panels', },
+		{ name: 'Parser', location: 'parser', },
+		{ name: 'Utils', location: 'utils', }
 	]
 });

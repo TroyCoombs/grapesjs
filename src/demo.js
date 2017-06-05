@@ -9,7 +9,6 @@ require(['config/require-config'], function () {
         plugins: ['gjs-plugin-ckeditor'],
         pluginOpts: {
           'gjs-plugin-ckeditor': {
-
           }
         },
         container: '#gjs',
