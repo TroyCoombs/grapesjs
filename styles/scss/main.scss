@@ -278,7 +278,8 @@ div.#{$app-prefix}select {
 .#{$clm-prefix}select option,
 .#{$sm-prefix}select option,
 .#{$sm-prefix}unit option {
-  @extend .#{$app-prefix}bg-main;
+  //@extend .#{$app-prefix}bg-main;
+	color: rgba(0, 0, 0, 0.74) !important;
   //background-color: $mainDkColor;
 }
 
