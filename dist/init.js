@@ -4,6 +4,10 @@ var editor = grapesjs.init(
     showOffsets: 1,
     autorender: 0,
     noticeOnUnload: 0,
+    plugins: ['gjs-plugin-ckeditor'],
+    pluginOpts: {
+      'gjs-plugin-ckeditor': {}
+    },
     container: '#gjs',
     height: '100%',
     fromElement: true,
