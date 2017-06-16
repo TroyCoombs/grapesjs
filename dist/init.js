@@ -401,6 +401,10 @@ function receiveMessage(event) {
     };
     parent.postMessage(obj, "http://localhost:4200");
   }
+
+  if (event.data.event == 'sendToken') {
+    window.token = event.data.data.token;
+  }
   // event.source is popup
   // event.data is "hi there yourself!  the secret response is: rheeeeet!"
 }
@@ -413,5 +417,5 @@ var obj = {
 };
 
 parent.postMessage(obj, "http://localhost:4200");
-
+parent.postMessage({ event: 'requestToken', data: '' }, "http://localhost:4200");
 editor.render();

@@ -41,7 +41,7 @@ module.exports = Backbone.View.extend({
 			type: 'POST',
 			data: formData,
 			headers: {
-				'authorization': this.config.token
+				'authorization': window.token
 			},
 			beforeSend: this.config.beforeSend,
 			complete: this.config.onComplete,

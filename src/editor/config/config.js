@@ -213,7 +213,7 @@ module.exports = {
     //   '<div class="badge-body">' +
     //   '<div class="badge-name">Adam Smith</div><div class="badge-role">CEO</div><div class="badge-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ipsum dolor sit</div>' +
     //   '</div>' +
-    //   '<div class="badge-foot"><span class="badge-link">f</span><span class="badge-link">t</span><span class="badge-link">ln</span></div>' +
+    //   '<div class="badge-foot"><a class="badge-link" title="facebook" href="http://www.facebook.com" target="_blank">f</a><a class="badge-link" title="twitter" href="http://www.twitter.com" target="_blank">t</a><a class="badge-link" title="linkedin" href="http://www.linkedin.com" target="_blank">In</a></div>' +
     //   '</div>' +
     //   '<div class="badge">' +
     //   '<div class="badge-header"></div>' +
@@ -221,7 +221,7 @@ module.exports = {
     //   '<div class="badge-body">' +
     //   '<div class="badge-name">John Black</div><div class="badge-role">Software Engineer</div><div class="badge-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ipsum dolor sit</div>' +
     //   '</div>' +
-    //   '<div class="badge-foot"><span class="badge-link">f</span><span class="badge-link">t</span><span class="badge-link">ln</span></div>' +
+    //   '<div class="badge-foot"><a class="badge-link" title="facebook" href="http://www.facebook.com" target="_blank">f</a><a class="badge-link" title="twitter" href="http://www.twitter.com" target="_blank">t</a><a class="badge-link" title="linkedin" href="http://www.linkedin.com" target="_blank">In</a></div>' +
     //   '</div>' +
     //   '<div class="badge">' +
     //   '<div class="badge-header"></div>' +
@@ -229,11 +229,11 @@ module.exports = {
     //   '<div class="badge-body">' +
     //   '<div class="badge-name">Jessica White</div><div class="badge-role">Web Designer</div><div class="badge-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ipsum dolor sit</div>' +
     //   '</div>' +
-    //   '<div class="badge-foot"><span class="badge-link">f</span><span class="badge-link">t</span><span class="badge-link">ln</span>' +
+    //   '<div class="badge-foot"><a class="badge-link" title="facebook" href="http://www.facebook.com" target="_blank">f</a><a class="badge-link" title="twitter" href="http://www.twitter.com" target="_blank">t</a><a class="badge-link" title="linkedin" href="http://www.linkedin.com" target="_blank">In</a></div>' +
     //   '</div>' +
     //   '</div></div>',
     //   attributes: { class: 'gjs-fonts gjs-f-3ba' }
-    // }, 
+    // },
     {
       id: 'text',
       label: 'Text',
