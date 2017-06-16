@@ -181,56 +181,60 @@ module.exports = {
       category: 'Basic',
       content: '<div class="blk-row"><div class="blk37l"></div><div class="blk37r"></div></div></div><style>' + blkStyle + '.blk37l{float: left;width: 30%;padding: 10px;min-height: 75px;}.blk37r{float: left;width: 70%;padding: 10px;min-height: 75px;}</style>',
       attributes: { class: 'gjs-fonts gjs-f-b37' }
-    }, {
-      id: 'hero',
-      label: 'Hero section',
-      category: 'Section',
-      content: '<header class="header-banner"> <div class="container-width">' +
-      '<div class="logo-container"><div class="logo">GrapesJS</div></div>' +
-      '<nav class="navbar">' +
-      '<div class="menu-item">BUILDER</div><div class="menu-item">TEMPLATE</div><div class="menu-item">WEB</div>' +
-      '</nav><div class="clearfix"></div>' +
-      '<div class="lead-title">Build your templates without coding</div>' +
-      '<div class="lead-btn">Try it now</div></div></header>',
-      attributes: { class: 'gjs-fonts gjs-f-hero' }
-    }, {
+    },
+    //  {
+    //   id: 'hero',
+    //   label: 'Hero section',
+    //   category: 'Section',
+    //   content: '<header class="header-banner"> <div class="container-width">' +
+    //   '<div class="logo-container"><div class="logo">GrapesJS</div></div>' +
+    //   '<nav class="navbar">' +
+    //   '<div class="menu-item">BUILDER</div><div class="menu-item">TEMPLATE</div><div class="menu-item">WEB</div>' +
+    //   '</nav><div class="clearfix"></div>' +
+    //   '<div class="lead-title">Build your templates without coding</div>' +
+    //   '<div class="lead-btn">Try it now</div></div></header>',
+    //   attributes: { class: 'gjs-fonts gjs-f-hero' }
+    // },
+    {
       id: 'h1p',
       label: 'Text section',
       category: 'Typography',
       content: '<h1 class="heading">Insert title here</h1><p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>',
       attributes: { class: 'gjs-fonts gjs-f-h1p' }
-    }, {
-      id: '3ba',
-      label: 'Badges',
-      category: 'Section',
-      content: '<div class="badges">' +
-      '<div class="badge">' +
-      '<div class="badge-header"></div>' +
-      '<img class="badge-avatar" src="img/team1.jpg">' +
-      '<div class="badge-body">' +
-      '<div class="badge-name">Adam Smith</div><div class="badge-role">CEO</div><div class="badge-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ipsum dolor sit</div>' +
-      '</div>' +
-      '<div class="badge-foot"><span class="badge-link">f</span><span class="badge-link">t</span><span class="badge-link">ln</span></div>' +
-      '</div>' +
-      '<div class="badge">' +
-      '<div class="badge-header"></div>' +
-      '<img class="badge-avatar" src="img/team2.jpg">' +
-      '<div class="badge-body">' +
-      '<div class="badge-name">John Black</div><div class="badge-role">Software Engineer</div><div class="badge-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ipsum dolor sit</div>' +
-      '</div>' +
-      '<div class="badge-foot"><span class="badge-link">f</span><span class="badge-link">t</span><span class="badge-link">ln</span></div>' +
-      '</div>' +
-      '<div class="badge">' +
-      '<div class="badge-header"></div>' +
-      '<img class="badge-avatar" src="img/team3.jpg">' +
-      '<div class="badge-body">' +
-      '<div class="badge-name">Jessica White</div><div class="badge-role">Web Designer</div><div class="badge-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ipsum dolor sit</div>' +
-      '</div>' +
-      '<div class="badge-foot"><span class="badge-link">f</span><span class="badge-link">t</span><span class="badge-link">ln</span>' +
-      '</div>' +
-      '</div></div>',
-      attributes: { class: 'gjs-fonts gjs-f-3ba' }
-    }, {
+    },
+    // {
+    //   id: '3ba',
+    //   label: 'Badges',
+    //   category: 'Section',
+    //   content: '<div class="badges">' +
+    //   '<div class="badge">' +
+    //   '<div class="badge-header"></div>' +
+    //   '<img class="badge-avatar" src="img/team1.jpg">' +
+    //   '<div class="badge-body">' +
+    //   '<div class="badge-name">Adam Smith</div><div class="badge-role">CEO</div><div class="badge-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ipsum dolor sit</div>' +
+    //   '</div>' +
+    //   '<div class="badge-foot"><span class="badge-link">f</span><span class="badge-link">t</span><span class="badge-link">ln</span></div>' +
+    //   '</div>' +
+    //   '<div class="badge">' +
+    //   '<div class="badge-header"></div>' +
+    //   '<img class="badge-avatar" src="img/team2.jpg">' +
+    //   '<div class="badge-body">' +
+    //   '<div class="badge-name">John Black</div><div class="badge-role">Software Engineer</div><div class="badge-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ipsum dolor sit</div>' +
+    //   '</div>' +
+    //   '<div class="badge-foot"><span class="badge-link">f</span><span class="badge-link">t</span><span class="badge-link">ln</span></div>' +
+    //   '</div>' +
+    //   '<div class="badge">' +
+    //   '<div class="badge-header"></div>' +
+    //   '<img class="badge-avatar" src="img/team3.jpg">' +
+    //   '<div class="badge-body">' +
+    //   '<div class="badge-name">Jessica White</div><div class="badge-role">Web Designer</div><div class="badge-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ipsum dolor sit</div>' +
+    //   '</div>' +
+    //   '<div class="badge-foot"><span class="badge-link">f</span><span class="badge-link">t</span><span class="badge-link">ln</span>' +
+    //   '</div>' +
+    //   '</div></div>',
+    //   attributes: { class: 'gjs-fonts gjs-f-3ba' }
+    // }, 
+    {
       id: 'text',
       label: 'Text',
       attributes: { class: 'gjs-fonts gjs-f-text' },
